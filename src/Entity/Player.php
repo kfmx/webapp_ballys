@@ -23,7 +23,7 @@ class Player
     #[ORM\Column(length: 45)]
     private ?string $city = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $birthDate = null;
 
     public function getId(): ?int

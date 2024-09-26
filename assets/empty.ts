@@ -1,1 +1,0 @@
-// empty .ts file to avoid ts-loader complaining about not finding anything to load. All our typescript is inside .vue files.
