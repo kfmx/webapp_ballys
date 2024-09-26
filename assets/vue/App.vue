@@ -10,22 +10,29 @@
     </div>
 </template>
   
-  <script>
-  export default {
+<script lang="ts">
+  import { defineComponent } from 'vue';
+
+  interface Player {
+    firstName: string;
+    lastName: string;
+    city: string;
+    birthDate: Date;
+  }
+
+  export default defineComponent({
     data() {
       return {
-        players: []
+        players: [] as Player[]
       };
     },
-  mounted() {
-    fetch('http://localhost:8000/api/players')
-      .then(response => response.json())
-      .then(data => {
-        this.players = data;
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }
-  }
-  </script>
+    mounted() {
+      fetch('http://localhost:8000/api/players')
+        .then(response => response.json())
+        .then((data: Player[]) => {
+          this.players = data;
+        })
+        .catch(console.error);
+    }
+  })
+</script>
