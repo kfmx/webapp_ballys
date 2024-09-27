@@ -58,7 +58,10 @@
         <table id="playerTable">
             <thead>
                 <tr>
-                    <th @click="toggleSortOrder"><span :style="{marginRight: '0.5rem'}">Birth Date</span><FontAwesomeIcon :icon="sortIcon" size="lg"/></th>
+                    <th @click="toggleSortOrder" :style="{cursor: 'pointer'}">
+                        <span :style="{marginRight: '0.5rem'}">Birth Date</span>
+                        <FontAwesomeIcon :icon="sortIcon" size="lg"/>
+                    </th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>City</th>
