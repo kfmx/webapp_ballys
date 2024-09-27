@@ -3,6 +3,8 @@
 - PHP (get from php.net, I use version 8.3.12)
 - Composer (get from getcomposer.org, I use version 2.7.9)
 - Symfony (On Windows, install by running 'curl -sS https://get.symfony.com/cli/installer | bash' and add symfony to your PATH. I use version 6.1.12)
+- Node.js (get from https://nodejs.org/en/download/package-manager, I use version 22.8.0)
+- Yarn (run 'npm install --global yarn', I use version 1.22.22)
 - A MySQL database
 
 # Instructions
