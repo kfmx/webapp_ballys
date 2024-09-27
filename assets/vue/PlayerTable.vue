@@ -54,22 +54,24 @@
 </script>
 
 <template>
-    <table id="playerTable">
-        <thead>
-            <tr>
-                <th @click="toggleSortOrder"><span :style="{marginRight: '0.5rem'}">Birth Date</span><FontAwesomeIcon :icon="sortIcon" size="lg"/></th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>City</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="player in players" :key="player.id">
-                <td>{{ formatPlayerBirthDate(player.birthDate) }}</td>
-                <td>{{ player.firstName }}</td>
-                <td>{{ player.lastName }}</td>
-                <td>{{ player.city }}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="playerTableContainer">
+        <table id="playerTable">
+            <thead>
+                <tr>
+                    <th @click="toggleSortOrder"><span :style="{marginRight: '0.5rem'}">Birth Date</span><FontAwesomeIcon :icon="sortIcon" size="lg"/></th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="player in players" :key="player.id">
+                    <td>{{ formatPlayerBirthDate(player.birthDate) }}</td>
+                    <td>{{ player.firstName }}</td>
+                    <td>{{ player.lastName }}</td>
+                    <td>{{ player.city }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </template>

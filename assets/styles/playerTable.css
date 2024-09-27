@@ -1,11 +1,18 @@
+#playerTableContainer {
+    overflow: auto;
+    min-width: 75%;
+}
+
 #playerTable {
+    width: 100%;
+    min-width: 800px;
     font-family: 'Open Sans';
     font-size: 15px;
     text-align: left;
     background-color: #36304a;
     border-radius: 0.5rem;
     border-collapse: collapse;
-    min-width: 75rem;
+    border-spacing: 0;
     cursor: default;
 
     thead {
