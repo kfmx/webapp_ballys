@@ -35,7 +35,7 @@ VALUES
 (10, 'Miku', 'Hatsune', 'Brazil', '2007-08-31 16:00:00');
 `
 
-2. Clone the repository from my github (https://github.com/kfmx/webapp_ballys)
+2. Clone the repository from my github (git clone https://github.com/kfmx/webapp_ballys.git .)
 
 3. Copy the file '.env.example' in the root directory and name the copy '.env'
   	- Change 'DATABASE_URL' to point to your MySQL database
